@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Reimbursements</title>
+   
+    
+</head>
+<body>
+<div class="container">
+    <h3>Select Employee</h3>
+    <select id="employee-select">
+        <option>--select--</option>
+    </select>
+
+    <div class="container">
+        <header>
+            <h2>View All Reimbursements</h2>
+        </header>
+        <main>
+            <table class="table table-striped" >
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+                </thead>
+                <tbody id="r-table-body"></tbody>
+            </table>
+        </main>
+    </div>
+</div>
+
+    <script src="../../scripts/my-reimbursements.js"></script>
+    <script src="../../scripts/ajax-requests.js"></script>
+    <script src="../../scripts/render-reimbursement-table.js"></script>
+
+</body>
+</html>

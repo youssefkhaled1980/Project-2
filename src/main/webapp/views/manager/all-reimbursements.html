@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reimbursements</title>
+   
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h2>View All Reimbursements</h2>
+    </header>
+    <main>
+        <div class='row g-0'>
+            <div class="btn-group col-md-5 w-auto ms-auto"  role="group" aria-label="Basic outlined example">
+                <button id="all-btn" type="button" class="btn btn-outline-primary">All</button>
+                <button id="pending-btn" type="button" class="btn btn-outline-info">Pending</button>
+                <button id="approved-btn" type="button" class="btn btn-outline-success">Approved</button>
+                <button id="denied-btn" type="button" class="btn btn-outline-danger">Denied</button>
+            </div>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="r-table-body"></tbody>
+        </table>
+    </main>
+</div>
+<script src="../../scripts/ajax-requests.js"></script>
+<script src="../../scripts/render-reimbursement-table.js"></script>
+<script src="../../scripts/all-reimbursements.js"></script>
+</body>
+</html>
